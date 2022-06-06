@@ -8,7 +8,7 @@ import notes from "./notes.jsx";
 function App(){
   return <div>
     <Header />
-    {notes.map(noteItems=> (<Note
+    {notes.map(noteItems=> (<Note  //map adds the data from notes.jsx component all in one go for seperate note. Reducing the hassel of doing it one by one for each note.
       key={noteItems.key}
       title={noteItems.title}
       content={noteItems.content}
